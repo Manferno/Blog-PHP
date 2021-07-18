@@ -1,0 +1,302 @@
+/*FUENTES*/
+
+@font-face{
+    font-family: "fajala";
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GENERALES*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Arial, Helvetica, Arial;
+    text-decoration: none; /*PARA ELIMINAR LINEAS AZULES EN ENLACES, ETC*/
+}
+
+
+body {
+    
+    background: url(../img/cubes.png) #f4f4f4; 
+
+
+}
+
+/*Para limpiar elementos que al arrastrar, se corren*/
+.clearfix{
+    clear: both;
+    float: none;    
+}
+
+/*Cabecera*/
+
+#header{
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+    }
+
+#logo{
+    float: left;
+    width: 540px;
+    height: 100px;
+    line-height: 90px;
+    margin-left: 10px;
+
+}   
+
+#logo a{
+    font-family: "fajala", helvetica;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #2979cd;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+
+}
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+/*MENU*/
+
+#menu{
+    clear:both;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #ccc;   
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    overflow: hidden;
+    
+    }
+
+#menu ul li:hover{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%)
+}
+
+#menu ul{
+    list-style: none;
+
+}
+
+#menu ul li{
+    float: left;
+    line-height: 44px;
+    border-right: 1px solid #d6d6d6;
+
+
+}
+
+#menu ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #838282;
+
+}
+
+/*CONTENIDO*/
+
+#container{
+    
+    width: 85%;
+    min-height: auto;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+/*SIDEBAR*/
+
+#sidebar{
+    
+    float: right;
+    width: 22%;
+    min-height: auto;   
+    
+    
+}
+
+.block-aside{
+
+    display: block;    
+    width: 80%;
+    margin:0px auto;
+    margin-bottom: 10px;
+    margin-right: 50px;    
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3),0px 3px 7px rgba(0,0,0,0.3),0px 0px 1px #ffffff inset, 0px -3px 2px rgba(0,0,0,0.25) inset;
+    
+}
+
+label,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+display: block;
+width: 95%;
+margin-top: 2px;
+margin-bottom: 2px;
+padding: 3px;
+}
+
+input[type="button"],
+input[type="submit"],
+.boton{
+
+    margin-top:10px;
+    margin-bottom: 2px;
+    display: block;
+    border-radius: 2px;   
+    color: white;    
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    padding: 10px;
+  
+
+}
+.boton{
+    color: white !important;
+    width: 120px;
+    text-align: center;
+}
+
+.boton-naranja{
+    background: orange  ;
+}
+
+.boton-rojo{
+    background: red  ;
+}
+
+.boton-verde{
+    background: #21d21e;
+}
+
+.block-aside h3{
+    margin-top: 20;
+    margin-bottom: 15px;
+
+}
+
+
+
+
+/*PRINCIPAL*/
+
+#principal{
+    
+    float:left;
+    width:70%;
+    min-height: 550px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-left: 5px;
+    overflow: hidden;
+    padding: 20px;
+
+
+}
+
+#principal a{
+    color: #333;
+}
+
+#principal h1{
+
+    font-size:24px;
+    color: #444;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajala";
+
+}
+
+#principal h2{
+
+    font-size:20px;
+    color: #2979cd;
+    text-shadow: 1px 1px 2px #ccc;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-family: "fajala";
+    
+}
+
+#principal p{
+    margin-top: 8px;
+
+}
+
+#ver-todas a{
+    display: block;
+    border-radius: 2px;
+    padding: 20px;
+    color: white;    
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    width: 160px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.fecha{
+  color: #4e4e4e;
+  margin-top: 5px;
+  font-size: 15px;
+
+}
+
+/*FOOTER*/
+
+#footer{
+    width: 70%;
+    clear: both;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-bottom: none; 
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 110px;
+    color: #666;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+
+
+
+}
+
+
+/*ERRORES DEL REGISTRO*/
+
+.alerta {
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background: green;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    
+}
+
+.alerta-error{
+    background: red;
+}
+
+
